@@ -14,8 +14,6 @@ export default function ProjectMissingData({data}) {
             Missing Data 
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
-                        {/* TR EN*/}
-            
             {data.Missing.map(item => 
             <div className='mb-3'>    
             <Card >
