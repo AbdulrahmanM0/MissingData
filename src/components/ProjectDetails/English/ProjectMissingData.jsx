@@ -11,7 +11,7 @@ export default function ProjectMissingData({data}) {
         {data.Missing.length >= 1 &&
         <>
             <div className='bg-dark text-white  p-2 ps-4 form-title rounded-top fw-bold'>
-            Missing Data .
+            Missing Data 
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
                         {/* TR EN*/}
@@ -33,8 +33,8 @@ export default function ProjectMissingData({data}) {
                         </div>
                     </ListGroupItem>
                     <ListGroupItem>
-                        <div className='text-end'>
-                            <div className='mb-2 fw-bold'>: التعليق </div>
+                        <div dir='rtl' className='text-end'>
+                            <div className='mb-2 fw-bold'>التعليق :</div>
                             <div>
                                 {item.CommentAR}
                             </div>
