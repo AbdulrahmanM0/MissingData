@@ -15,7 +15,7 @@ export default function ProjectMissingData({data}) {
             </div>
             <div className='form-container shadow-lg p-4 bg-body rounded-bottom mb-4'>
             {data.Missing.map(item => 
-            <div className='mb-3'>    
+            <div className='mb-3' key={item.ID}>    
             <Card >
                 <CardHeader>
                     <span className='fw-bold'>ID: {item.ID}</span>
@@ -47,7 +47,6 @@ export default function ProjectMissingData({data}) {
             </div>
         </>
         }
-
     </>
     </div>
   )

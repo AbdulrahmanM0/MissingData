@@ -4,6 +4,7 @@ import ProjectDetails from '../components/ProjectDetails/English/ProjectDetails'
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import ProjectMissingData from '../components/ProjectDetails/English/ProjectMissingData'
+import ProjectContact from '../components/ProjectDetails/English/ProjectContact'
 
 export default function MissingData() {
     const [searchParams] = useSearchParams();
@@ -54,6 +55,11 @@ export default function MissingData() {
           <div className='col-lg-11 col-md-10 col-sm-12 m-auto mb-4'>
             {/* English */}
             <ProjectMissingData data={data}/>
+          </div>
+
+          <div className='col-lg-11 col-md-10 col-sm-12 m-auto mb-4'>
+            {/* English */}
+            <ProjectContact />
           </div>
       
         </>
